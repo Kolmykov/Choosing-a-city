@@ -1,0 +1,138 @@
+.select {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 38px;
+
+	padding-left: 10px;
+	padding-right: 25px;
+
+	margin: 0;
+
+	border: 1px solid #cbd1d4;
+	background-color: #f9f9f9;
+
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	color: #333333;
+
+	/* new */
+	background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/select-arrows.svg");
+	background-repeat: no-repeat;
+	background-position: right 5px center;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	/* new */
+}
+
+.select:focus {
+	outline: 2px solid #0f8fee;
+	outline-offset: 4px;
+}
+
+
+.checkbox-text::before {
+	margin-right: 8px;
+
+	/* new */
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+
+	background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/checkbox-unchecked.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* new */
+}
+
+/* new */
+
+.checkbox:checked+.checkbox-text::before {
+	background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/city-select/img/checkbox-checked.svg");
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* new */
+
+.checkbox:focus~.checkbox-text::before {
+	outline: 2px solid #0f8fee;
+	outline-offset: 2px;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
+
+	height: 100vh;
+	display: flex;
+	align-items: center;
+
+}
+
+.page {
+	width: 400px;
+	padding: 50px;
+	border: 1px solid #cbd1d4;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-group:nth-child(n+2) {
+	margin-top: 25px;
+}
+
+.select-group {
+	display: block;
+}
+
+/* new */
+
+.checkbox {
+	display: none;
+}
+
+/* new */
+
+.select-label {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.checkbox-group {
+	display: block;
+	font-size: 14px;
+}
+
+.button {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #ffffff;
+
+	padding: 8px 20px;
+	border: 1px solid #0f8fee;
+	background-color: #0f8fee;
+
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #1b89dc;
+	border-color: #1b89dc;
+}
+
+.button:focus {
+	outline: 2px solid #0f8fee;
+	outline-offset: 4px;
+}
